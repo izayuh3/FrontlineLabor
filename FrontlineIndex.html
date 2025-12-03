@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Frontline Event Labor | Stagehand Crews for Live Events</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Frontline Event Labor provides reliable, insured stagehand crews for concerts, festivals, and live events across Southern California."
+  />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --green-dark: #0F2E1E;
+      --green-main: #1F4D35;
+      --green-soft: #E3ECE6;
+      --grey-light: #F3F4F6;
+      --text-dark: #111827;
+      --text-muted: #6B7280;
+      --white: #FFFFFF;
+      --radius-md: 8px;
+      --radius-lg: 14px;
+      --shadow-soft: 0 10px 25px rgba(15, 46, 30, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    .container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid #E5E7EB;
+    }
+
+    .navbar-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+    }
+
+    .nav-left {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+
+    .logo-mark {
+      width: 38px;
+      height: 38px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, #2F6B4B, var(--green-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .brand-text-title {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      font-size: 1.05rem;
+      text-transform: uppercase;
+    }
+
+    .brand-text-sub {
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      color: var(--text-muted);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--green-main);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 1.4rem;
+      border-radius: 999px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: var(--green-dark);
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+    }
+
+    .btn-primary:hover {
+      background: #123725;
+      transform: translateY(-1px);
+    }
+
+    .btn-outline {
+      background: transparent;
+      border-color: var(--green-dark);
+      color: var(--green-dark);
+    }
+
+    .btn-outline:hover {
+      background: var(--green-soft);
+    }
+
+    /* HERO */
+    .hero {
+      padding: 3.5rem 0 3rem;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr);
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.17em;
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--green-main);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 4vw, 2.7rem);
+      line-height: 1.1;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .hero-subtitle {
+      font-size: 0.98rem;
+      color: var(--text-muted);
+      max-width: 32rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .hero-meta {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .badge-row {
+      display: flex;
+      gap: 0.75rem;
+      margin-top: 1.75rem;
+      flex-wrap: wrap;
+    }
+
+    .badge {
+      font-size: 0.78rem;
+      padding: 0.3rem 0.65rem;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-main);
+      font-weight: 500;
+    }
+
+    .hero-right {
+      position: relative;
+    }
+
+    .hero-card {
+      background: linear-gradient(135deg, #11251A, #163528);
+      border-radius: var(--radius-lg);
+      padding: 1.6rem 1.5rem;
+      color: var(--white);
+      box-shadow: var(--shadow-soft);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background: radial-gradient(circle at 10% 0, rgba(255,255,255,0.12), transparent 55%);
+      opacity: 0.75;
+      pointer-events: none;
+    }
+
+    .hero-card-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      opacity: 0.95;
+    }
+
+    .hero-card-main {
+      font-size: 1.05rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+
+    .hero-card-list {
+      list-style: none;
+      font-size: 0.86rem;
+      opacity: 0.92;
+    }
+
+    .hero-card-list li + li {
+      margin-top: 0.25rem;
+    }
+
+    .hero-card-foot {
+      margin-top: 1.1rem;
+      font-size: 0.78rem;
+      opacity: 0.85;
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 3.5rem 0;
+    }
+
+    .section-header {
+      margin-bottom: 2.2rem;
+      text-align: left;
+    }
+
+    .section-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 0.4rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    /* SERVICES */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .card {
+      border-radius: var(--radius-md);
+      border: 1px solid #E5E7EB;
+      padding: 1.3rem 1.2rem 1.25rem;
+      background: var(--white);
+      transition: box-shadow 0.15s ease, transform 0.12s ease, border-color 0.15s ease;
+    }
+
+    .card:hover {
+      box-shadow: var(--shadow-soft);
+      transform: translateY(-2px);
+      border-color: var(--green-soft);
+    }
+
+    .card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+    }
+
+    .card-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* WHY / GRID */
+    .pill-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .pill {
+      border-radius: var(--radius-md);
+      background: var(--white);
+      padding: 1rem 1.05rem;
+      border: 1px solid #E5E7EB;
+      font-size: 0.88rem;
+    }
+
+    .pill-title {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .pill-body {
+      color: var(--text-muted);
+    }
+
+    .bg-strip {
+      background: var(--grey-light);
+    }
+
+    /* TWO COLUMN LISTS */
+    .two-col-lists {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem;
+    }
+
+    .bullets {
+      list-style: none;
+      padding-left: 0;
+      font-size: 0.92rem;
+    }
+
+    .bullets li {
+      margin-bottom: 0.45rem;
+      padding-left: 1.05rem;
+      position: relative;
+    }
+
+    .bullets li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      color: var(--green-main);
+    }
+
+    /* How It Works */
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.4rem;
+    }
+
+    .step {
+      padding: 1.1rem 1.1rem 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid #E5E7EB;
+      background: var(--white);
+    }
+
+    .step-number {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: var(--green-soft);
+      color: var(--green-main);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .step-title {
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+      font-size: 0.98rem;
+    }
+
+    .step-body {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+
+    /* FORM */
+    .form-card {
+      border-radius: var(--radius-lg);
+      border: 1px solid #E5E7EB;
+      padding: 1.8rem 1.6rem;
+      box-shadow: var(--shadow-soft);
+      background: var(--white);
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      font-size: 0.9rem;
+    }
+
+    label {
+      font-weight: 500;
+    }
+
+    input,
+    select,
+    textarea {
+      border-radius: 6px;
+      border: 1px solid #D1D5DB;
+      padding: 0.55rem 0.6rem;
+      font-family: inherit;
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.15s ease, box-shadow 0.15s ease;
+      background: #F9FAFB;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--green-main);
+      box-shadow: 0 0 0 1px rgba(31, 77, 53, 0.2);
+      background: var(--white);
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .form-note {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 0.6rem;
+    }
+
+    /* ABOUT */
+    .about-text {
+      max-width: 720px;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+    }
+
+    .about-text strong {
+      color: var(--text-dark);
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--green-dark);
+      color: var(--white);
+      padding: 2.1rem 0 1.6rem;
+      margin-top: 3rem;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1.2fr 1.2fr;
+      gap: 1.8rem;
+      font-size: 0.9rem;
+    }
+
+    .footer-title {
+      font-weight: 600;
+      margin-bottom: 0.4rem;
+      font-size: 0.95rem;
+    }
+
+    .footer-small {
+      font-size: 0.8rem;
+      opacity: 0.8;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li + li {
+      margin-top: 0.25rem;
+    }
+
+    .footer-links a {
+      opacity: 0.9;
+    }
+
+    .footer-links a:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(229,231,235,0.2);
+      margin-top: 1.3rem;
+      padding-top: 0.8rem;
+      font-size: 0.78rem;
+      opacity: 0.8;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .hero-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .hero {
+        padding-top: 2.6rem;
+      }
+      .cards-grid,
+      .pill-grid,
+      .steps-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .footer-grid {
+        grid-template-columns: 1.6fr 1fr;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .navbar-inner {
+        height: auto;
+        padding: 0.7rem 0;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+      }
+      .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        font-size: 0.9rem;
+      }
+      .hero-actions {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      section {
+        padding: 2.6rem 0;
+      }
+      .cards-grid,
+      .pill-grid,
+      .steps-grid,
+      .two-col-lists,
+      .form-grid,
+      .footer-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .form-card {
+        padding: 1.4rem 1.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container navbar-inner">
+      <div class="nav-left">
+        <div class="logo-mark">F</div>
+        <div>
+          <div class="brand-text-title">Frontline Event Labor</div>
+          <div class="brand-text-sub">Stagehand • Load-In • Crew</div>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#clients">Who We Serve</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#request">Request a Crew</a>
+        <button class="btn btn-primary" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">
+          Request a Crew
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="eyebrow">Southern California Event Labor</div>
+          <h1 class="hero-title">Reliable stagehand crews for live events.</h1>
+          <p class="hero-subtitle">
+            Frontline Event Labor supplies trained, insured crews for concerts, festivals,
+            and corporate productions across Los Angeles, Orange County, and San Diego.
+          </p>
+          <div class="hero-actions">
+            <button class="btn btn-primary" onclick="document.getElementById('request').scrollIntoView({behavior:'smooth'})">
+              Request a Crew
+            </button>
+            <a class="btn btn-outline" href="tel:9495477464">
+              Call to Book &nbsp; (949) 547-7464
+            </a>
+          </div>
+          <div class="hero-meta">
+            Available for scheduled calls and last-minute coverage.
+          </div>
+          <div class="badge-row">
+            <span class="badge">Stagehands &amp; loaders</span>
+            <span class="badge">On-site lead hands</span>
+            <span class="badge">Insured crews</span>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <div class="hero-card-title">Sample Call Sheet</div>
+            <div class="hero-card-main">Arena Load-In — Los Angeles</div>
+            <ul class="hero-card-list">
+              <li>➤ 8&nbsp;x&nbsp;General Stagehands — 08:00–18:00</li>
+              <li>➤ 4&nbsp;x&nbsp;Loaders — 08:00–14:00</li>
+              <li>➤ 1&nbsp;x&nbsp;Lead Hand — 08:00–Show</li>
+            </ul>
+            <div class="hero-card-foot">
+              You set the call. We staff the crew and handle the payroll.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Event labor you can count on</h2>
+          <p class="section-subtitle">
+            Crews that understand decks, docks, trucks, and show timelines.
+          </p>
+        </div>
+
+        <div class="cards-grid">
+          <div class="card">
+            <h3 class="card-title">General Stagehands</h3>
+            <p class="card-body">
+              Decking, risers, truss assist, cabling, scenic setup, and general show support
+              under your department leads.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Loaders &amp; Pushers</h3>
+            <p class="card-body">
+              Truck loading/unloading, case pushes, dock organization, and gear moves to keep
+              your load-in and load-out on schedule.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Backline Assistants</h3>
+            <p class="card-body">
+              Support for instrument setup, stage changes, mic stands, stands, and cable
+              management for touring or local acts.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Lighting &amp; Audio Helpers</h3>
+            <p class="card-body">
+              Non-skilled helpers for hanging, running, and striking under your lead
+              technicians and house crew.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">On-Site Lead Hands</h3>
+            <p class="card-body">
+              Experienced crew leads to interface with your production manager, direct the
+              crew, and keep the day flowing smoothly.
+            </p>
+          </div>
+
+          <div class="card">
+            <h3 class="card-title">Multi-Day Builds &amp; Festivals</h3>
+            <p class="card-body">
+              Consistent teams for multi-day builds, show runs, and strikes so you’re not
+              breaking in a new crew every day.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="bg-strip">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Why production teams choose Frontline</h2>
+          <p class="section-subtitle">
+            We’ve been on the deck. We understand what a good crew looks like.
+          </p>
+        </div>
+
+        <div class="pill-grid">
+          <div class="pill">
+            <div class="pill-title">Insured &amp; professional</div>
+            <div class="pill-body">
+              Crews are covered by liability and, where required, workers’ compensation,
+              so you can focus on the show, not the paperwork.
+            </div>
+          </div>
+          <div class="pill">
+            <div class="pill-title">Show-experienced hands</div>
+            <div class="pill-body">
+              We prioritize workers with real concert, festival, and corporate event
+              experience and match them to the right calls.
+            </div>
+          </div>
+          <div class="pill">
+            <div class="pill-title">Reliable and on time</div>
+            <div class="pill-body">
+              We brief every crew on call times, dress code, parking, and venue rules
+              so they arrive ready to work.
+            </div>
+          </div>
+          <div class="pill">
+            <div class="pill-title">Fast scheduling</div>
+            <div class="pill-body">
+              Last-minute additions or schedule changes happen. We respond quickly to keep
+              your labor plan covered.
+            </div>
+          </div>
+          <div class="pill">
+            <div class="pill-title">Single point of contact</div>
+            <div class="pill-body">
+              One coordinator for your calls, adjustments, and invoices—no chasing a dozen
+              different numbers.
+            </div>
+          </div>
+          <div class="pill">
+            <div class="pill-title">Built for repeat work</div>
+            <div class="pill-body">
+              We aim to become your go-to crew provider for tours, seasons, and recurring
+              shows throughout Southern California.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE SERVE -->
+    <section id="clients">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Who we serve</h2>
+          <p class="section-subtitle">
+            Frontline Event Labor plugs into your existing production team and vendors.
+          </p>
+        </div>
+
+        <div class="two-col-lists">
+          <div>
+            <ul class="bullets">
+              <li>Staging and mobile stage companies</li>
+              <li>Lighting &amp; audio vendors</li>
+              <li>Event &amp; production companies</li>
+              <li>Festivals and outdoor shows</li>
+            </ul>
+          </div>
+          <div>
+            <ul class="bullets">
+              <li>Venues, arenas, and theaters</li>
+              <li>Corporate events &amp; trade shows</li>
+              <li>Schools, churches, and community events</li>
+              <li>Civic and seasonal events (fairs, parades, city shows)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section id="how-it-works" class="bg-strip">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How booking works</h2>
+          <p class="section-subtitle">
+            Simple, clear steps from request to crew on the dock.
+          </p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-title">Request a crew</div>
+            <div class="step-body">
+              Share your event dates, location, call times, and the type and number of crew
+              you need.
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-title">We confirm &amp; staff</div>
+            <div class="step-body">
+              We confirm availability, assign experienced stagehands and a lead hand if
+              requested, then send you a confirmation.
+            </div>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-title">Crew arrives ready</div>
+            <div class="step-body">
+              Your crew checks in on-site, works under your direction, and we handle the
+              scheduling and payroll on the back end.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE AREA -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Serving Southern California</h2>
+          <p class="section-subtitle">
+            Based in the Pacific Northwest mindset of reliability, supporting events across:
+          </p>
+        </div>
+
+        <div class="two-col-lists">
+          <div>
+            <h3 class="card-title">Los Angeles</h3>
+            <p class="card-body">
+              Arenas, theaters, studios, outdoor festivals, TV tapings, and touring shows.
+            </p>
+          </div>
+          <div>
+            <h3 class="card-title">Orange County &amp; San Diego</h3>
+            <p class="card-body">
+              Convention centers, fairs, amphitheaters, waterfront venues, and casino
+              properties.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REQUEST A CREW -->
+    <section id="request">
+      <div class="container">
+        <div class="section-header" style="text-align:center;">
+          <h2 class="section-title">Request a crew</h2>
+          <p class="section-subtitle">
+            Tell us about your event and we’ll follow up to confirm details and availability.
+          </p>
+        </div>
+
+        <form class="form-card"
+              method="post"
+              action="https://formspree.io/f/your-form-id-here">
+          <!-- Replace the action URL with your form handler (Formspree, etc.) -->
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="name">Name*</label>
+              <input id="name" name="name" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email*</label>
+              <input id="email" name="email" type="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Phone*</label>
+              <input id="phone" name="phone" type="tel" required />
+            </div>
+
+            <div class="form-group">
+              <label for="date">Event date(s)*</label>
+              <input id="date" name="dates" type="text" placeholder="e.g. June 12–14" required />
+            </div>
+
+            <div class="form-group">
+              <label for="location">Venue / City*</label>
+              <input id="location" name="location" type="text" required />
+            </div>
+
+            <div class="form-group">
+              <label for="calltime">Call time &amp; estimated hours</label>
+              <input id="calltime" name="calltime" type="text" placeholder="e.g. 08:00–18:00" />
+            </div>
+
+            <div class="form-group">
+              <label for="crew">Number of crew needed</label>
+              <input id="crew" name="crew" type="number" min="1" />
+            </div>
+
+            <div class="form-group">
+              <label for="labor">Type of labor</label>
+              <select id="labor" name="labor">
+                <option value="">Select…</option>
+                <option>General Stagehands</option>
+                <option>Loaders / Pushers</option>
+                <option>Backline Assistants</option>
+                <option>Lighting / Audio Helpers</option>
+                <option>Lead Hands</option>
+                <option>Mixed Crew</option>
+              </select>
+            </div>
+
+            <div class="form-group" style="grid-column: 1 / -1;">
+              <label for="notes">Notes / additional info</label>
+              <textarea id="notes" name="notes"
+                        placeholder="Stage type, vendors involved, special requirements, etc."></textarea>
+            </div>
+          </div>
+
+          <div style="margin-top: 1.1rem;">
+            <button type="submit" class="btn btn-primary">Submit request</button>
+            <p class="form-note">
+              Prefer to talk now? Call us at <strong>(949) 547-7464</strong>.
+              <!-- Replace with your real number -->
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section>
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Frontline Event Labor</h2>
+        </div>
+        <p class="about-text">
+          <strong>Frontline Event Labor</strong> was built by people who have worked the deck:
+          long show days, overnight strikes, and tight turnarounds. We understand how much a
+          solid crew matters to a successful production. Our goal is simple—put reliable,
+          show-ready people on your call sheet so you can focus on the bigger picture of the
+          event.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-title">Frontline Event Labor</div>
+          <p class="footer-small">
+            Reliable stagehand and event labor crews for concerts, festivals, and live events
+            across Southern California.
+          </p>
+        </div>
+        <div>
+          <div class="footer-title">Contact</div>
+          <p class="footer-small">
+            Email: <a href="mailto:info@frontlineeventlabor.com">info@frontlineeventlabor.com</a><br />
+            Phone: <a href="tel:9495477464">(949) 547-7464</a>
+          </p>
+        </div>
+        <div>
+          <div class="footer-title">Service area</div>
+          <ul class="footer-links">
+            <li>Los Angeles</li>
+            <li>Orange County</li>
+            <li>San Diego</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2025 Frontline Event Labor. All rights reserved.</span>
+        <span>Site by Frontline Event Labor.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
