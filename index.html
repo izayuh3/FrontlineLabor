@@ -356,7 +356,7 @@
       background: var(--grey-light);
     }
 
-    /* TWO COLUMN LISTS */
+    /* TWO COLUMN LISTS (generic) */
     .two-col-lists {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -380,6 +380,13 @@
       position: absolute;
       left: 0;
       color: var(--green-main);
+    }
+
+    /* SERVICE AREA (custom 3-column grid) */
+    #service-area .two-col-lists {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2rem;
     }
 
     /* How It Works */
@@ -560,6 +567,9 @@
       .steps-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
+      #service-area .two-col-lists {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
       .footer-grid {
         grid-template-columns: 1.6fr 1fr;
       }
@@ -592,7 +602,8 @@
       .steps-grid,
       .two-col-lists,
       .form-grid,
-      .footer-grid {
+      .footer-grid,
+      #service-area .two-col-lists {
         grid-template-columns: minmax(0, 1fr);
       }
       .form-card {
@@ -641,7 +652,7 @@
               Request a Crew
             </button>
             <a class="btn btn-outline" href="tel:9495477464">
-              Call to Book &nbsp; (949) 547-7464
+              Call to Book &nbsp; 9495477464
             </a>
           </div>
           <div class="hero-meta">
@@ -861,12 +872,12 @@
     </section>
 
     <!-- SERVICE AREA -->
-    <section>
+    <section id="service-area">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Serving Southern California</h2>
           <p class="section-subtitle">
-            Based in the Pacific Northwest mindset of reliability, supporting events across:
+            Frontline Event Labor supports live events across the major production hubs of Southern California.
           </p>
         </div>
 
@@ -874,14 +885,21 @@
           <div>
             <h3 class="card-title">Los Angeles</h3>
             <p class="card-body">
-              Arenas, theaters, studios, outdoor festivals, TV tapings, and touring shows.
+              Arenas, theaters, studios, convention centers, outdoor festivals, and touring productions.
             </p>
           </div>
+
           <div>
-            <h3 class="card-title">Orange County &amp; San Diego</h3>
+            <h3 class="card-title">Orange County</h3>
             <p class="card-body">
-              Convention centers, fairs, amphitheaters, waterfront venues, and casino
-              properties.
+              Convention centers, fairgrounds, amphitheaters, hotels, corporate venues, and seasonal events.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="card-title">San Diego</h3>
+            <p class="card-body">
+              Waterfront venues, casinos, resorts, amphitheaters, fairs, and large-scale festivals.
             </p>
           </div>
         </div>
@@ -966,7 +984,7 @@
           <div style="margin-top: 1.1rem;">
             <button type="submit" class="btn btn-primary">Submit request</button>
             <p class="form-note">
-              Prefer to talk now? Call us at <strong>(949) 547-7464</strong>.
+              Prefer to talk now? Call us at <strong>9495477464</strong>.
               <!-- Replace with your real number -->
             </p>
           </div>
@@ -981,11 +999,12 @@
           <h2 class="section-title">About Frontline Event Labor</h2>
         </div>
         <p class="about-text">
-          <strong>Frontline Event Labor</strong> was built by people who have worked the deck:
-          long show days, overnight strikes, and tight turnarounds. We understand how much a
-          solid crew matters to a successful production. Our goal is simple—put reliable,
-          show-ready people on your call sheet so you can focus on the bigger picture of the
-          event.
+          <strong>Frontline Event Labor</strong> was built by people who have worked the deck—long show days,
+          overnight strikes, and fast-turn festivals. We don’t just send bodies to fill a call.<br><br>
+          We prioritize <strong>hands with real show experience</strong>, people who know how to work with staging,
+          lighting, audio, and touring crews. Our goal is to give production teams something many labor companies
+          struggle to provide: <strong>consistent, reliable, show-ready crews who understand the pace and professionalism
+          live events demand.</strong>
         </p>
       </div>
     </section>
@@ -1006,7 +1025,7 @@
           <div class="footer-title">Contact</div>
           <p class="footer-small">
             Email: <a href="mailto:info@frontlineeventlabor.com">info@frontlineeventlabor.com</a><br />
-            Phone: <a href="tel:9495477464">(949) 547-7464</a>
+            Phone: <a href="tel:9495477464">9495477464</a>
           </p>
         </div>
         <div>
