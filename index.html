@@ -219,6 +219,12 @@
       position: relative;
     }
 
+    /* NEW: full logo above sample call sheet */
+    .hero-full-logo {
+      max-width: 260px;
+      margin: 0 auto 0.9rem;
+    }
+
     .hero-card {
       background: linear-gradient(135deg, #11251A, #163528);
       border-radius: var(--radius-lg);
@@ -227,6 +233,7 @@
       box-shadow: var(--shadow-soft);
       position: relative;
       overflow: hidden;
+      margin-top: 0.4rem; /* pushes card slightly down so both fit nicely */
     }
 
     .hero-card::before {
@@ -603,6 +610,9 @@
       .form-card {
         padding: 1.4rem 1.2rem;
       }
+      .hero-full-logo {
+        margin-bottom: 0.7rem;
+      }
     }
   </style>
 </head>
@@ -661,6 +671,9 @@
         </div>
 
         <div class="hero-right">
+          <!-- NEW: full logo above sample call sheet -->
+          <img src="frontline-logo-full.png" alt="Frontline Event Labor full logo" class="hero-full-logo">
+
           <div class="hero-card">
             <div class="hero-card-title">Sample Call Sheet</div>
             <div class="hero-card-main">Arena Load-In — Los Angeles</div>
@@ -1040,3 +1053,4 @@
 
 </body>
 </html>
+
