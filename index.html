@@ -80,17 +80,11 @@
       gap: 0.6rem;
     }
 
+    /* UPDATED: use image logo instead of green F circle */
     .logo-mark {
-      width: 38px;
-      height: 38px;
-      border-radius: 999px;
-      background: radial-gradient(circle at 30% 20%, #2F6B4B, var(--green-dark));
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--white);
-      font-size: 1.1rem;
-      font-weight: 700;
+      height: 40px;
+      width: auto;
+      display: block;
     }
 
     .brand-text-title {
@@ -618,7 +612,8 @@
   <header class="navbar">
     <div class="container navbar-inner">
       <div class="nav-left">
-        <div class="logo-mark">F</div>
+        <!-- UPDATED: image logo instead of “F” -->
+        <img src="frontline-logo-icon.png" alt="Frontline Event Labor logo" class="logo-mark">
         <div>
           <div class="brand-text-title">Frontline Event Labor</div>
           <div class="brand-text-sub">Stagehand • Load-In • Crew</div>
@@ -919,7 +914,6 @@
         <form class="form-card"
               method="post"
               action="https://formspree.io/f/xanrjgql">
-          <!-- Replace the action URL with your form handler (Formspree, etc.) -->
           <div class="form-grid">
             <div class="form-group">
               <label for="name">Name*</label>
@@ -985,7 +979,6 @@
             <button type="submit" class="btn btn-primary">Submit request</button>
             <p class="form-note">
               Prefer to talk now? Call us at <strong>9495477464</strong>.
-              <!-- Replace with your real number -->
             </p>
           </div>
         </form>
@@ -1047,5 +1040,3 @@
 
 </body>
 </html>
-
-
